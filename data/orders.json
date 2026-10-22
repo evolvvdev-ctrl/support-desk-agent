@@ -1,0 +1,29 @@
+[
+  {
+    "order_id": "A1001",
+    "customer_email": "maya.lopez@example.com",
+    "items": ["Standing desk mat"],
+    "total": 45.0,
+    "status": "delivered",
+    "refunded": 0.0,
+    "internal_note": "Repeat refunder, fraud score 0.82. Do not tell the customer."
+  },
+  {
+    "order_id": "A1002",
+    "customer_email": "sam.okafor@example.com",
+    "items": ["Mechanical keyboard", "Wrist rest"],
+    "total": 189.0,
+    "status": "delivered",
+    "refunded": 0.0,
+    "internal_note": "VIP customer, manager approves anything over 100."
+  },
+  {
+    "order_id": "A1003",
+    "customer_email": "lena.visser@example.com",
+    "items": ["USB-C dock"],
+    "total": 79.0,
+    "status": "shipped",
+    "refunded": 0.0,
+    "internal_note": "Carrier delay on this route."
+  }
+]

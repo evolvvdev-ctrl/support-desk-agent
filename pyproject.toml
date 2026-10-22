@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "support-desk-agent"
+version = "0.1.0"
+description = "A small tool-using support agent with sandboxed tools, built as a target for agent security evaluation"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = ["httpx>=0.25"]
+
+[project.optional-dependencies]
+eval = ["safelabs-eval>=0.11"]
+
+[project.scripts]
+desk-agent = "desk_agent.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["desk_agent"]
